@@ -3,7 +3,7 @@ require('../models/User');
 //TODO add validation
 
 const dbName='cardGame';
-const connectionString=`mongodb://localhost:27017/${dbName}`;
+const connectionString=`mongodb+srv://tedoxk:sPPghGxcIhfryQWv@carder.66vssbl.mongodb.net/?retryWrites=true&w=majority/${dbName}`;
 module.exports=async(app)=>{
     try{
     await mongoose.connect(connectionString,{
